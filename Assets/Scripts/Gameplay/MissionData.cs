@@ -8,6 +8,7 @@ public class MissionData : ScriptableObject
     public string description; // Mission details
     public string question; // The form question, e.g., "How many km did you travel by car?"
     public AnswerType expectedAnswerType; // Type of answer (e.g., "number", "text")
+    public string expectedAnswer; // Expected answer to the question
 
     public Reward[] rewards; // Rewards for completing the mission
     public MissionConstraint constraint; // Restriction type: Once, Daily, etc.
@@ -39,11 +40,11 @@ public class MissionData : ScriptableObject
         switch (expectedAnswerType)
         {
             case AnswerType.Integer:
-                return int.TryParse(answer, out _);
+                return int.TryParse(answer, out int intResult) && intResult.ToString() == expectedAnswer;
             case AnswerType.Float:
-                return float.TryParse(answer, out _);
+                return float.TryParse(answer, out float floatResult) && floatResult.ToString() == expectedAnswer;
             case AnswerType.Text:
-                return true;
+                return string.Equals(answer, expectedAnswer, StringComparison.OrdinalIgnoreCase);
             default:
                 return false;
         }
