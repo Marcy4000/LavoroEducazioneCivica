@@ -16,6 +16,7 @@ MonoBehaviour:
   description: aaaaaah
   question: Hai una borraccia di metallo?
   expectedAnswerType: 2
+  expectedAnswer: si
   rewards:
   - rewardCurrency: 0
     item: {fileID: 11400000, guid: ddd36e1b67cc56248b10ad818c5a4cea, type: 2}
