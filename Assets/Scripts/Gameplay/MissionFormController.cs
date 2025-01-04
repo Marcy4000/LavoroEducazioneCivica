@@ -22,6 +22,10 @@ public class MissionFormController : MonoBehaviour
 
         link.OnClick += () =>
         {
+            if (string.IsNullOrWhiteSpace(currentMission.link))
+            {
+                return;
+            }
             Application.OpenURL(currentMission.link);
         };
     }
