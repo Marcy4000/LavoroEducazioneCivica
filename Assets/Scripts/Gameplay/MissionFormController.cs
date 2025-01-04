@@ -9,6 +9,7 @@ public class MissionFormController : MonoBehaviour
     public TMP_Text missionQuestionText; // Displays the mission question
     public TMP_InputField answerInputField; // Field for the player's answer
     public Button submitButton;
+    public ClickableLink link;
 
     private MissionData currentMission;
     private MissionManager missionManager;
@@ -18,6 +19,11 @@ public class MissionFormController : MonoBehaviour
         missionManager = FindObjectOfType<MissionManager>();
 
         gameObject.SetActive(false);
+
+        link.OnClick += () =>
+        {
+            Application.OpenURL(currentMission.link);
+        };
     }
 
     public void OpenMissionForm(MissionData mission)

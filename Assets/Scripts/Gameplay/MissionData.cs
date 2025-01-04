@@ -5,10 +5,14 @@ using UnityEngine;
 public class MissionData : ScriptableObject
 {
     public string title; // Title of the mission
+    [TextArea(3, 10)]
     public string description; // Mission details
+    [TextArea(3, 10)]
     public string question; // The form question, e.g., "How many km did you travel by car?"
     public AnswerType expectedAnswerType; // Type of answer (e.g., "number", "text")
     public string expectedAnswer; // Expected answer to the question
+
+    public string link; // Link to additional information
 
     public Reward[] rewards; // Rewards for completing the mission
     public MissionConstraint constraint; // Restriction type: Once, Daily, etc.
