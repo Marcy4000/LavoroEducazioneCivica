@@ -11,6 +11,8 @@ public class Tree : MonoBehaviour
     private DateTime plantedTime;
     private const string SaveKey = "TreeData";
 
+    [SerializeField] private GameObject[] treeSprites;
+
     public void InitializeTree(int id, float growthDuration, Vector3 initialScale, Vector3 finalScale)
     {
         treeId = id;
@@ -20,6 +22,13 @@ public class Tree : MonoBehaviour
 
         plantedTime = DateTime.UtcNow;
         SaveTreeData();
+
+        foreach (GameObject treeSprite in treeSprites)
+        {
+            treeSprite.SetActive(false);
+        }
+
+        treeSprites[UnityEngine.Random.Range(0, treeSprites.Length)].SetActive(true);
     }
 
     private void Start()
