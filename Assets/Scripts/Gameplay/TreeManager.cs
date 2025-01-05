@@ -9,9 +9,9 @@ public class TreeManager : MonoBehaviour
         public int id;
         public GameObject prefab;
         public float growthTime; // Growth time in seconds
-        public Vector3 startScale = new Vector3(0.5f, 0.5f, 1f);
+        public Vector3 startScale = new Vector3(0.3f, 0.3f, 0.8f);
         public Vector3 fullScale = new Vector3(1f, 1f, 1f);
-        public float sizeVariation = 0.3f; // Controls how much the size can vary
+        public float sizeVariation = 0.5f; // Controls how much the size can vary
     }
 
     public List<TreeType> treeTypes = new List<TreeType>();
