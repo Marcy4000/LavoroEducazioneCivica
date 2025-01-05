@@ -27,7 +27,7 @@ public class ShopManager : MonoBehaviour
 
     private void UpdateCurrencyDisplay()
     {
-        currencyText.text = $"Currency: {CurrencyManager.Instance.ShopTickets}";
+        currencyText.text = $"{CurrencyManager.Instance.ShopTickets}<size=70%>x";
     }
 
     private void PopulateShop()
