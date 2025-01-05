@@ -34,6 +34,8 @@ public class MissionFormController : MonoBehaviour
     {
         currentMission = mission;
 
+        link.enabled = !string.IsNullOrWhiteSpace(currentMission.link);
+
         missionTitleText.text = mission.title;
         missionQuestionText.text = mission.question;
         answerInputField.text = "";

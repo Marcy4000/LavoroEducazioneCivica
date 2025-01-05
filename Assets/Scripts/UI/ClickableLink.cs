@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class ClickableLink : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private TextMeshProUGUI textComponent;
-    private string url;
     private Color originalColor;
     [SerializeField] private Color hoverColor = Color.blue;
 
@@ -17,9 +16,6 @@ public class ClickableLink : MonoBehaviour, IPointerClickHandler, IPointerEnterH
     {
         textComponent = GetComponent<TextMeshProUGUI>();
         originalColor = textComponent.color;
-
-        // Recupera l'URL dal componente di testo
-        url = textComponent.text;
     }
 
     public void OnPointerClick(PointerEventData eventData)
