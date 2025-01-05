@@ -43,11 +43,10 @@ public class Tree : MonoBehaviour
 
         if (growthProgress >= 1f)
         {
-            Debug.Log("Tree fully grown!");
-        }
-        else
-        {
-            Debug.Log("Tree is growing...");
+            if (transform.localScale != fullScale)
+            {
+                transform.localScale = fullScale;
+            }
         }
     }
 
