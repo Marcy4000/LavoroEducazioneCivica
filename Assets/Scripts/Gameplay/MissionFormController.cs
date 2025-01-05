@@ -61,7 +61,11 @@ public class MissionFormController : MonoBehaviour
     private void OnSubmit()
     {
         string answer = answerInputField.text;
-        missionManager.CompleteMission(currentMission, answer);
-        gameObject.SetActive(false);
+        bool vaild = missionManager.CompleteMission(currentMission, answer);
+        if (vaild)
+        {
+            gameObject.SetActive(false);
+        }
+
     }
 }

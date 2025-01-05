@@ -48,17 +48,19 @@ public class MissionManager : MonoBehaviour
         }
     }
 
-    public void CompleteMission(MissionData mission, string answer)
+    public bool CompleteMission(MissionData mission, string answer)
     {
         if (mission.EvaluateAnswer(answer))
         {
             mission.Complete();
             missionItems.Find(x => x.MissionData == mission)?.SetMissionCompleted();
             GrantRewards(mission);
+            return true;
         }
         else
         {
             Debug.Log("Invalid answer for mission.");
+            return false;
         }
     }
 
