@@ -19,7 +19,7 @@ MonoBehaviour:
     <link="http://www.google.com/">AAAAAG</link>'
   expectedAnswerType: 2
   expectedAnswer: si
-  link: http://www.google.com/
+  link: 
   rewards:
   - rewardCurrency: 0
     item: {fileID: 11400000, guid: ddd36e1b67cc56248b10ad818c5a4cea, type: 2}
