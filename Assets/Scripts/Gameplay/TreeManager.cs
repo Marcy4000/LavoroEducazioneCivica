@@ -11,6 +11,7 @@ public class TreeManager : MonoBehaviour
         public float growthTime; // Growth time in seconds
         public Vector3 startScale = new Vector3(0.5f, 0.5f, 1f);
         public Vector3 fullScale = new Vector3(1f, 1f, 1f);
+        public float sizeVariation = 0.3f; // Controls how much the size can vary
     }
 
     public List<TreeType> treeTypes = new List<TreeType>();
@@ -31,10 +32,15 @@ public class TreeManager : MonoBehaviour
             position.y = 0f;
             newTree.transform.localPosition = position;
 
-            Tree treeComponent = newTree.GetComponent<Tree>();
-            treeComponent.InitializeTree(tree.treeTypeId, selectedTreeType.growthTime, selectedTreeType.startScale, selectedTreeType.fullScale);
+            // Generate random size multiplier
+            float randomSize = Random.Range(1f - selectedTreeType.sizeVariation, 1f + selectedTreeType.sizeVariation);
+            Vector3 randomizedStartScale = selectedTreeType.startScale * randomSize;
+            Vector3 randomizedFullScale = selectedTreeType.fullScale * randomSize;
 
-            Debug.Log($"Tree of type {tree} planted!");
+            Tree treeComponent = newTree.GetComponent<Tree>();
+            treeComponent.InitializeTree(tree.treeTypeId, selectedTreeType.growthTime, randomizedStartScale, randomizedFullScale);
+
+            Debug.Log($"Tree of type {tree} planted with size multiplier: {randomSize}");
         }
         else
         {
