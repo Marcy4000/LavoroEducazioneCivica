@@ -75,3 +75,5 @@ bo_Data/
 
 bo.x86_64
 UnityPlayer.so
+build/
+build_Data/
