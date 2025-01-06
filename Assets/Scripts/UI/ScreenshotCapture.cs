@@ -42,42 +42,9 @@ public class WorldScreenshotCapture : MonoBehaviour
         // Encode to PNG
         byte[] bytes = screenshot.EncodeToPNG();
 
-        // Save or download the screenshot
-#if UNITY_WEBGL
-        string fileName = "Screenshot_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
-        DownloadImageWebGL(bytes, fileName);
-#else
-        string path = PromptForSaveLocation();
-        if (!string.IsNullOrEmpty(path))
-        {
-            File.WriteAllBytes(path, bytes);
-            Debug.Log("Screenshot saved to " + path);
-        }
-#endif
+        // Save the screenshot
+        string path = Path.Combine(Application.persistentDataPath, "Screenshot_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png");
+        File.WriteAllBytes(path, bytes);
+        Debug.Log("Screenshot saved to " + path);
     }
-
-#if UNITY_WEBGL
-    [System.Runtime.InteropServices.DllImport("__Internal")]
-    private static extern void DownloadImageWebGL(byte[] data, string fileName);
-
-    private void DownloadImageWebGL(byte[] data, string fileName)
-    {
-        string base64Data = System.Convert.ToBase64String(data);
-        string downloadScript = $"(function(){{ var link = document.createElement('a'); link.href = 'data:image/png;base64,{base64Data}'; link.download = '{fileName}'; document.body.appendChild(link); link.click(); document.body.removeChild(link); }})();";
-        Application.ExternalEval(downloadScript);
-    }
-#endif
-
-#if UNITY_EDITOR || UNITY_STANDALONE
-    private string PromptForSaveLocation()
-    {
-#if UNITY_EDITOR
-        return UnityEditor.EditorUtility.SaveFilePanel("Save Screenshot", "", "Screenshot.png", "png");
-#else
-        // Implement a file save dialog for standalone builds (platform-specific)
-        Debug.LogWarning("Save file dialog not implemented for standalone builds.");
-        return "";
-#endif
-    }
-#endif
 }
