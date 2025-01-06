@@ -8,6 +8,7 @@ public class ShopItemUI : MonoBehaviour
     public TMP_Text costText;
     public Image iconImage;
     public Button buyButton;
+    public GameObject insufficientFundsMessage; // Add this UI element
 
     private ShopItemData itemData;
     private System.Action updateCurrencyDisplayCallback;
@@ -22,6 +23,9 @@ public class ShopItemUI : MonoBehaviour
         iconImage.sprite = data.icon;
 
         buyButton.onClick.AddListener(() => PurchaseItem());
+        
+        if (insufficientFundsMessage != null)
+            insufficientFundsMessage.SetActive(false);
     }
 
     private void PurchaseItem()
@@ -31,10 +35,24 @@ public class ShopItemUI : MonoBehaviour
             Debug.Log($"Purchased: {itemData.itemName}");
             InventoryManager.Instance.AddItem(itemData);
             updateCurrencyDisplayCallback.Invoke();
+            
+            if (insufficientFundsMessage != null)
+                insufficientFundsMessage.SetActive(false);
         }
         else
         {
             Debug.Log("Not enough currency!");
+            if (insufficientFundsMessage != null)
+            {
+                insufficientFundsMessage.SetActive(true);
+                Invoke("HideInsufficientMessage", 2f); // Hide message after 2 seconds
+            }
         }
+    }
+
+    private void HideInsufficientMessage()
+    {
+        if (insufficientFundsMessage != null)
+            insufficientFundsMessage.SetActive(false);
     }
 }

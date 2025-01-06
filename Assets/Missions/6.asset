@@ -10,19 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29cd7772193f0de4c97ae7895bee8b23, type: 3}
-  m_Name: Chicco
+  m_Name: 6
   m_EditorClassIdentifier: 
-  title: Limiti al Riscaldamento Globale e Riserve di Carbone
+  title: Iniziative per il Clima in Europa
   description: 
-  question: "A Parigi, la comunit\xE0 internazionale ha deciso di limitare il riscaldamento
-    globale a un massimo di 2 gradi Celsius. Quanta riserva mondiale di carbone duro
-    e lignite dovrebbe quindi rimanere nel terreno?"
+  question: "Quale affermazione è sbagliata?"
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
-  - 40%
-  - 60%
-  - 80%
+  - I giudici hanno condannato il governo olandese a rafforzare le sue misure di protezione del clima
+  - Più di 4 milioni di persone sono state disperse nelle strade il 20.09.2019 per misure più rigorose di protezione del clima
+  - Ogni tetto della scuola in Slovenia è dotato di sistemi solari
   rispostaCorretta: 2
   link: 
   rewards:

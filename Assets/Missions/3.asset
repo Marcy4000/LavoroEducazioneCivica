@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29cd7772193f0de4c97ae7895bee8b23, type: 3}
-  m_Name: Chicco
+  m_Name: 3
   m_EditorClassIdentifier: 
-  title: Limiti al Riscaldamento Globale e Riserve di Carbone
+  title: Le Brughiere e lo Stoccaggio di CO2
   description: 
-  question: "A Parigi, la comunit\xE0 internazionale ha deciso di limitare il riscaldamento
-    globale a un massimo di 2 gradi Celsius. Quanta riserva mondiale di carbone duro
-    e lignite dovrebbe quindi rimanere nel terreno?"
+  question: "Le brughiere immagazzinano molto più CO2 delle foreste, eppure occupano solo il tre percento dell'area terrestre globale. Chi provoca le maggiori emissioni di CO2 attraverso la distruzione della brughiera?"
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
-  - 40%
-  - 60%
-  - 80%
-  rispostaCorretta: 2
+  - Indonesia
+  - Russia
+  - Unione Europea
+  rispostaCorretta: 1
   link: 
   rewards:
   - rewardCurrency: 1

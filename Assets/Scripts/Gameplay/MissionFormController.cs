@@ -2,6 +2,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class MissionFormController : MonoBehaviour
 {
@@ -79,11 +80,23 @@ public class MissionFormController : MonoBehaviour
     {
         string answer = currentMission.expectedAnswerType == AnswerType.MultipleChoice ?
             answerDropdown.value.ToString() : answerInputField.text;
-        bool vaild = missionManager.CompleteMission(currentMission, answer);
-        if (vaild)
+        bool valid = missionManager.CompleteMission(currentMission, answer);
+        if (valid)
         {
             gameObject.SetActive(false);
         }
+        else
+        {
+            StartCoroutine(ShowInvalidAnswerMessage());
+        }
+    }
 
+    private IEnumerator ShowInvalidAnswerMessage()
+    {
+        TMP_Text buttonText = submitButton.GetComponentInChildren<TMP_Text>();
+        string originalText = buttonText.text;
+        buttonText.text = "Errato!";
+        yield return new WaitForSeconds(2f);
+        buttonText.text = originalText;
     }
 }

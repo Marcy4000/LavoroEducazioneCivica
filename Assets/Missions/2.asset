@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29cd7772193f0de4c97ae7895bee8b23, type: 3}
-  m_Name: Chicco
+  m_Name: 2
   m_EditorClassIdentifier: 
-  title: Limiti al Riscaldamento Globale e Riserve di Carbone
+  title: Emissioni di CO2 nell'Unione Europea
   description: 
-  question: "A Parigi, la comunit\xE0 internazionale ha deciso di limitare il riscaldamento
-    globale a un massimo di 2 gradi Celsius. Quanta riserva mondiale di carbone duro
-    e lignite dovrebbe quindi rimanere nel terreno?"
+  question: "Quale stato membro dell'UE ha avuto la peggiore CO2 footprint con 16 tonnellate pro capite?"
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
-  - 40%
-  - 60%
-  - 80%
-  rispostaCorretta: 2
+  - Polonia
+  - Lussemburgo
+  - Italia
+  rispostaCorretta: 1
   link: 
   rewards:
   - rewardCurrency: 1

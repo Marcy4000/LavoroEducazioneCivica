@@ -1,7 +1,7 @@
 ## Quiz: Climate Change and Environmental Impact
 
 
-### Question 1
+### Question 1: Limiti al Riscaldamento Globale e Riserve di Carbone
 
 A Parigi, la comunità internazionale ha deciso di limitare il riscaldamento globale a un massimo di 2 gradi Celsius. Quanta riserva mondiale di carbone duro e lignite dovrebbe quindi rimanere nel terreno?
 
@@ -12,7 +12,7 @@ A Parigi, la comunità internazionale ha deciso di limitare il riscaldamento glo
 - **C 80 percento** (Risposta corretta)
 
 
-### Question 2
+### Question 2: Emissioni di CO2 nell'Unione Europea
 
 Quale stato membro dell'UE ha avuto la peggiore CO2 footprint con 16 tonnellate pro capite?
 
@@ -23,7 +23,7 @@ Quale stato membro dell'UE ha avuto la peggiore CO2 footprint con 16 tonnellate 
 - C Italia
 
 
-### Question 3
+### Question 3: Le Brughiere e lo Stoccaggio di CO2
 
 Le brughiere immagazzinano molto più CO2 delle foreste, eppure occupano solo il tre percento dell'area terrestre globale. Chi provoca le maggiori emissioni di CO2 attraverso la distruzione della brughiera?
 
@@ -34,7 +34,7 @@ Le brughiere immagazzinano molto più CO2 delle foreste, eppure occupano solo il
 - B Unione Europea
 
 
-### Question 4
+### Question 4: Protesta Climatica a New York
 
 Perché le barche erano sospese in alto sopra Time Square a New York alla fine del 2018? L'azione
 
@@ -45,7 +45,7 @@ Perché le barche erano sospese in alto sopra Time Square a New York alla fine d
 - C era una protesta dei pescatori contro quote di pesca troppo basse
 
 
-### Question 5
+### Question 5: Settori Economici e Impatto Climatico
 
 Quale settore economico contribuisce maggiormente ai cambiamenti climatici?
 
@@ -56,7 +56,7 @@ Quale settore economico contribuisce maggiormente ai cambiamenti climatici?
 - C Industria dei trasporti
 
 
-### Question 6
+### Question 6: Iniziative per il Clima in Europa
 
 Quale affermazione è sbagliata?
 
@@ -67,18 +67,7 @@ Quale affermazione è sbagliata?
 - B Più di 4 milioni di persone sono state disperse nelle strade il 20.09.2019 per misure più rigorose di protezione del clima
 
 
-### Question 7
-
-El carramba ha attaccato un messaggio al canale. Mostra tutti i messaggi attaccati.
-
-- Oggi alle 17:40
-
-- **Oggi alle 17:41** (Risposta corretta)
-
-- El carramba — Oggi alle 17:42
-
-
-### Question 8
+### Question 8: Paesi Vulnerabili e Cambiamenti Climatici
 
 Qual è la situazione di tutti i paesi più vulnerabili ai cambiamenti climatici, come il Bangladesh, la Bolivia o la Tanzania?
 
@@ -89,7 +78,7 @@ Qual è la situazione di tutti i paesi più vulnerabili ai cambiamenti climatici
 - B Stanno già pianificando il reinsediamento della loro popolazione in paesi più sicuri
 
 
-### Question 9
+### Question 9: Impatto Ambientale delle Famiglie
 
 Qual è il principale impatto delle famiglie sui cambiamenti climatici?
 
@@ -100,7 +89,7 @@ Qual è il principale impatto delle famiglie sui cambiamenti climatici?
 - C Consumo
 
 
-### Question 10
+### Question 10: Riduzione delle Emissioni attraverso la Mobilità Sostenibile
 
 Se si percorre in bicicletta, invece che in macchina, dieci chilometri (andata e ritorno) per tre anni, quanto meno di CO2 sarà rilasciata in atmosfera?
 
@@ -111,7 +100,7 @@ Se si percorre in bicicletta, invece che in macchina, dieci chilometri (andata e
 - B circa una tonnellata
 
 
-### Question 11
+### Question 11: Obiettivi Climatici dell'Unione Europea
 
 Europa dovrebbe diventare neutrale dal punto di vista climatico! Entro quando la Commissione europea intende raggiungere l'obiettivo di zero emissioni nette?
 
@@ -122,7 +111,7 @@ Europa dovrebbe diventare neutrale dal punto di vista climatico! Entro quando la
 - C Entro il 2060
 
 
-### Question 12
+### Question 12: Geoingegneria e Lotta ai Cambiamenti Climatici
 
 Qual è il metodo che la scienza della geoingegneria NON ha finora considerato per combattere i cambiamenti climatici?
 
