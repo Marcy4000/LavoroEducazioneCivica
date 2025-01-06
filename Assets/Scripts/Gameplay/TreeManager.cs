@@ -37,7 +37,7 @@ public class TreeManager : MonoBehaviour
             Vector3 randomizedStartScale = selectedTreeType.startScale * randomSize;
             Vector3 randomizedFullScale = selectedTreeType.fullScale * randomSize;
 
-            Tree treeComponent = newTree.GetComponent<Tree>();
+            TreeObject treeComponent = newTree.GetComponent<TreeObject>();
             treeComponent.InitializeTree(tree.treeTypeId, selectedTreeType.growthTime, randomizedStartScale, randomizedFullScale);
 
             Debug.Log($"Tree of type {tree} planted with size multiplier: {randomSize}");

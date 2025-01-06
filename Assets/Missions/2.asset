@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Emissioni di CO2 nell'Unione Europea
   description: 
-  question: "Quale stato membro dell'UE ha avuto la peggiore CO2 footprint con 16 tonnellate pro capite?"
+  question: Quale stato membro dell'UE ha avuto la peggiore CO2 footprint con 16
+    tonnellate pro capite?
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
@@ -25,6 +26,9 @@ MonoBehaviour:
   link: 
   rewards:
   - rewardCurrency: 1
-    item: {fileID: 0}
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
     amount: 5
+  - rewardCurrency: 0
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 1
   constraint: 0

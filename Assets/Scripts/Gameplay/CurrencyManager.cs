@@ -7,7 +7,7 @@ public class CurrencyManager : MonoBehaviour
     [SerializeField] private Sprite currencySprite;
     public Sprite CurrencySprite => currencySprite;
 
-    private int shopTickets = 100;
+    private int shopTickets = 20;
 
     public int ShopTickets => shopTickets;
 

@@ -22,6 +22,12 @@ public class MissionItem : MonoBehaviour
 
     public void Initialize(MissionData mission)
     {
+        if (mission == null)
+        {
+            Debug.LogWarning("Mission is null!");
+            return;
+        }
+
         missionData = mission;
         missionTitleText.text = mission.title;
 

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Tree : MonoBehaviour
+public class TreeObject : MonoBehaviour
 {
     private int treeId;
     private float growthTime;

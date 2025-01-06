@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Protesta Climatica a New York
   description: 
-  question: "Perché le barche erano sospese in alto sopra Time Square a New York alla fine del 2018?"
+  question: "Perch\xE9 le barche erano sospese in alto sopra Time Square a New York
+    alla fine del 2018?"
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
@@ -25,6 +26,9 @@ MonoBehaviour:
   link: 
   rewards:
   - rewardCurrency: 1
-    item: {fileID: 0}
-    amount: 5
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 7
+  - rewardCurrency: 0
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 2
   constraint: 0

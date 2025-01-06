@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Settori Economici e Impatto Climatico
   description: 
-  question: "Quale settore economico contribuisce maggiormente ai cambiamenti climatici?"
+  question: Quale settore economico contribuisce maggiormente ai cambiamenti climatici?
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
@@ -25,6 +25,6 @@ MonoBehaviour:
   link: 
   rewards:
   - rewardCurrency: 1
-    item: {fileID: 0}
-    amount: 5
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 8
   constraint: 0

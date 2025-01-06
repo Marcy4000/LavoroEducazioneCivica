@@ -14,17 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Iniziative per il Clima in Europa
   description: 
-  question: "Quale affermazione è sbagliata?"
+  question: "Quale affermazione \xE8 sbagliata?"
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
-  - I giudici hanno condannato il governo olandese a rafforzare le sue misure di protezione del clima
-  - Più di 4 milioni di persone sono state disperse nelle strade il 20.09.2019 per misure più rigorose di protezione del clima
-  - Ogni tetto della scuola in Slovenia è dotato di sistemi solari
+  - I giudici hanno condannato il governo olandese a rafforzare le sue misure di
+    protezione del clima
+  - "Pi\xF9 di 4 milioni di persone sono state disperse nelle strade il 20.09.2019
+    per misure pi\xF9 rigorose di protezione del clima"
+  - "Ogni tetto della scuola in Slovenia \xE8 dotato di sistemi solari"
   rispostaCorretta: 2
   link: 
   rewards:
   - rewardCurrency: 1
-    item: {fileID: 0}
-    amount: 5
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 10
+  - rewardCurrency: 0
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 3
   constraint: 0

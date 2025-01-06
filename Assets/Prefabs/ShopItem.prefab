@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Non hai abbastanza risorse!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a270b7f8bb70c6b42b33e9bf4232cc73, type: 2}
+  m_sharedMaterial: {fileID: 2489618861862200408, guid: a270b7f8bb70c6b42b33e9bf4232cc73, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

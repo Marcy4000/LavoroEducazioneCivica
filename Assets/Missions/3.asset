@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Le Brughiere e lo Stoccaggio di CO2
   description: 
-  question: "Le brughiere immagazzinano molto più CO2 delle foreste, eppure occupano solo il tre percento dell'area terrestre globale. Chi provoca le maggiori emissioni di CO2 attraverso la distruzione della brughiera?"
+  question: "Le brughiere immagazzinano molto pi\xF9 CO2 delle foreste, eppure occupano
+    solo il tre percento dell'area terrestre globale. Chi provoca le maggiori emissioni
+    di CO2 attraverso la distruzione della brughiera?"
   expectedAnswerType: 3
   expectedAnswer: 
   risposteMultiple:
@@ -25,6 +27,6 @@ MonoBehaviour:
   link: 
   rewards:
   - rewardCurrency: 1
-    item: {fileID: 0}
-    amount: 5
+    item: {fileID: 11400000, guid: 10a9aaf227ee13048ba214732c85fdd2, type: 2}
+    amount: 6
   constraint: 0
